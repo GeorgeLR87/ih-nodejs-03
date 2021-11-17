@@ -1,5 +1,12 @@
 {{!-- views/players.hbs --}}
+	
+<p>Esta es nuestra sección de Players</p>
 
-<p>Esta es nuestra sección de players</p>
+<ul>
+	{{!-- El #each itera un arreglo sobre cada elemento. --}}
+	{{!-- Es un similar a for || .map --}}
+	{{#each data }}
+		{{> playerCard this }}
+	{{/each}}
 
-{{> playerCard}}
+</ul>
